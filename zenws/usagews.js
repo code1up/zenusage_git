@@ -76,7 +76,7 @@ function _makeRequest(template, message, username, password, extra) {
 	}
 
 	template = template
-		.replace(/__action__/mgi, _.escape(message))
+		.replace(/__action__/mgi, _.escape(message)) // TODO: action / message?
 		.replace(/__username__/mgi, _.escape(username))
 		.replace(/__password__/mgi, _.escape(password))
 		.replace(/__body__/mgi, bodyString); // Already escaped

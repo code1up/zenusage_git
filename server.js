@@ -4,7 +4,7 @@ var api = require("./api/usageapi.js");
 var app = express.createServer();
 
 app.get("/", function(req, res) {
-	res.send("Hello, Nick.");
+	res.send("Hello, Yasin.");
 });
 
 app.get("/api/signin/:username/:password", function(req, res, next) {

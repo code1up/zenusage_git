@@ -1,0 +1,17 @@
+{
+  "author": "Alan Gorton <dev.code1up@googlemail.com> (twitter.com/code1up)",
+  "name": "zenusage",
+  "description": "Zen Internet Usage Checker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/code1up/zenusage",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/code1up/zenusage.git"
+  },
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}

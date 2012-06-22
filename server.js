@@ -4,7 +4,7 @@ var ws = require("./zenws/usagews.js");
 var app = express.createServer();
 
 app.get("/", function(req, res) {
-	res.send("Hello, World.");
+	res.send("Hello, Cloud9.");
 });
 
 app.get("/api/signin/:username/:password", function(req, res, next) {
@@ -22,9 +22,6 @@ app.get("/api/signin/:username/:password", function(req, res, next) {
         password: password
     });
     */
-    
-    // username = "alanjgorton@googlemail.com";
-    // password = "p4ssword";
 
     ws.signin(username, password, function(error, data) {
         if (error) {

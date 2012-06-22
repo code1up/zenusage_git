@@ -4,7 +4,7 @@ var ws = require("./zenws/usagews.js");
 var app = express.createServer();
 
 app.get("/", function(req, res) {
-	res.send("Hello, Me.");
+	res.send("Hello, World.");
 });
 
 app.get("/api/signin/:username/:password", function(req, res, next) {

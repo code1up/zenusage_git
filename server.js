@@ -23,9 +23,6 @@ app.get("/api/signin/:username/:password", function(req, res, next) {
     });
     */
 
-    // username = "alanjgorton@googlemail.com";
-    // password = "p4ssword";
-
     ws.signin(username, password, function(error, data) {
         if (error) {
             res.send(error);

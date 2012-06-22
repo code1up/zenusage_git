@@ -1,10 +1,10 @@
 var express = require("express");
-var ws = require("./zenws/usagews.js");
+var api = require("./api/usageapi.js");
 
 var app = express.createServer();
 
 app.get("/", function(req, res) {
-	res.send("Hello, Cloud9.");
+	res.send("Hello, Yay.");
 });
 
 app.get("/api/signin/:username/:password", function(req, res, next) {
@@ -23,7 +23,7 @@ app.get("/api/signin/:username/:password", function(req, res, next) {
     });
     */
 
-    ws.signin(username, password, function(error, data) {
+    api.signin(username, password, function(error, data) {
         if (error) {
             res.send(error);
         } else {

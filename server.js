@@ -1,10 +1,24 @@
-var express = require("express");
+/*
+ * Node.js
+ */
+var path = require("path");
+
+/*
+ * Application-specific
+ */
 var api = require("./api/usageapi.js");
 
+/*
+ * Express
+ */
+var express = require("express");
 var app = express.createServer();
+var rootPath = path.join(__dirname, "webapp");
+
+app.use(express["static"](rootPath)); // TODO: avoid reserved word 'static'
 
 app.get("/", function(req, res) {
-	res.send("Hello, Hello.");
+    res.redirect("/index.html");
 });
 
 app.get("/api/signin/:username/:password", function(req, res, next) {
@@ -15,13 +29,6 @@ app.get("/api/signin/:username/:password", function(req, res, next) {
     console.log(password);
 
     res.contentType("text/json");
-
-    /*
-    res.send({
-        username: username,
-        password: password
-    });
-    */
 
     api.signin(username, password, function(error, data) {
         if (error) {

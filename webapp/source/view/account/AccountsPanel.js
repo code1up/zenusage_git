@@ -3,11 +3,28 @@
  */
 
 (function() {
+    var _toolbar = {
+        kind: app.view.account.AccountsPanelToolbar
+    };
+
+    var _footer = {
+        kind: app.view.account.AccountsPanelFooter
+    };
+
+    var _spacer = {
+        fit: true
+    };
+
     enyo.kind({
         name: "app.view.account.AccountsPanel",
-        kind: "enyo.Control",
 
         classes: "app-view-accounts-panel",
-        content: "AccountsPanel"
+        layoutKind: "enyo.FittableRowsLayout",
+
+        components: [
+            _toolbar,
+            _spacer,
+            _footer
+        ]
     });  
 }());

@@ -3,6 +3,7 @@
  */
 
 .app-view-service-panel {
-    min-width: 480px;
+    min-width: 320px;
     background-color: aliceblue;
+    box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.3)
 }

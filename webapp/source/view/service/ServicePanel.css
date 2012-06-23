@@ -1,0 +1,8 @@
+/*
+ * ServicePanel.css
+ */
+
+.app-view-service-panel {
+    min-width: 480px;
+    background-color: aliceblue;
+}

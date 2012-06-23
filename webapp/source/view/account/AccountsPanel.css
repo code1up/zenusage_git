@@ -1,0 +1,8 @@
+/*
+ * AccountsPanel.css
+ */
+
+.app-view-accounts-panel {
+    min-width: 320px;
+    background-color: hotpink;
+}

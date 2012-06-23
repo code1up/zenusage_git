@@ -1,0 +1,10 @@
+/*
+ * Container.css
+ */
+
+.app-view-container {
+}
+
+.app-view-container > * {
+    min-width: 250px;
+}

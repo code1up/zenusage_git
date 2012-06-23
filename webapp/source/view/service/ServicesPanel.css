@@ -1,0 +1,8 @@
+/*
+ * ServicesPanel.css
+ */
+
+.app-view-services-panel {
+    min-width: 480px;
+    background-color: lightyellow;
+}

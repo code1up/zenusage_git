@@ -7,6 +7,7 @@
         name: "app.view.service.ServicesPanel",
         kind: "enyo.Control",
 
-        style: "background-color: hotpink;"
+        classes: "app-view-services-panel",
+        content: "ServicesPanel"
     });  
 }());

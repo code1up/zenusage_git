@@ -21,6 +21,9 @@
         arrangerKind: "enyo.CollapsingArranger",
 
         fit: true,
+        realtimeFit: true,
+
+        classes: "app-view-container",
 
         components: [
             _accountsPanel,

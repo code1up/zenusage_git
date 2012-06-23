@@ -7,6 +7,7 @@
         name: "app.view.account.AccountsPanel",
         kind: "enyo.Control",
 
-        style: "background-color: cornflowerblue;"
+        classes: "app-view-accounts-panel",
+        content: "AccountsPanel"
     });  
 }());
